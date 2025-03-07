@@ -1,0 +1,35 @@
+{
+	"parent": "ironman:hundred_total_deaths",
+	"display":
+	{
+		"icon":
+		{
+			"id": "nether_star"
+		},
+		"title":
+		{
+			"text": "200 Total Deaths",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "...",
+			"color": "blue",
+			"bold": true,
+			"italic": true
+		},
+		"frame": "challenge",
+		"hidden": false
+	},
+	"criteria":
+	{
+		"impossible":
+		{
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}

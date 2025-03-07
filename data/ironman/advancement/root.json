@@ -1,0 +1,35 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"id": "redstone"
+		},
+		"title":
+		{
+			"text": "Hardcore Ironman",
+			"color": "dark_red",
+			"bold": true
+		},
+		"description": {
+			"text": "Dying on my HCIM: Completed.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"background": "minecraft:textures/block/netherrack.png"
+	},
+	"criteria":
+	{
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}

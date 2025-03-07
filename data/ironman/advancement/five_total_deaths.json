@@ -1,0 +1,33 @@
+{
+	"parent": "ironman:root",
+	"display":
+	{
+		"icon":
+		{
+			"id": "coal"
+		},
+		"title":
+		{
+			"text": "5 Total Deaths",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "You need to be more careful!",
+			"color": "blue",
+			"bold": false
+		},
+		"frame": "challenge",
+		"hidden": false
+	},
+	"criteria":
+	{
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}

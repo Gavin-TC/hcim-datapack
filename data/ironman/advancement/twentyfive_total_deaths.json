@@ -1,0 +1,34 @@
+{
+	"parent": "ironman:ten_total_deaths",
+	"display":
+	{
+		"icon":
+		{
+			"id": "skeleton_skull"
+		},
+		"title":
+		{
+			"text": "25 Total Deaths",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "Why did you even pick hardcore??",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"hidden": false
+	},
+	"criteria":
+	{
+		"impossible":
+		{
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}

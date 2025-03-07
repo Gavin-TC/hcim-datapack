@@ -1,0 +1,34 @@
+{
+	"parent": "ironman:twentyfive_total_deaths",
+	"display":
+	{
+		"icon":
+		{
+			"id": "totem_of_undying"
+		},
+		"title":
+		{
+			"text": "50 Total Deaths",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "Please make a totem farm!",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"hidden": false
+	},
+	"criteria":
+	{
+		"impossible":
+		{
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}

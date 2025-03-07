@@ -1,0 +1,35 @@
+{
+	"parent": "ironman:twohundred_total_deaths",
+	"display":
+	{
+		"icon":
+		{
+			"id": "skeleton_skull"
+		},
+		"title":
+		{
+			"text": "500 Total Deaths",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "\n\n\n\n...",
+			"color": "blue",
+			"bold": true,
+			"italics": true
+		},
+		"frame": "challenge",
+		"hidden": false
+	},
+	"criteria":
+	{
+		"impossible":
+		{
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements":
+	[
+		["impossible"]
+	]
+}
