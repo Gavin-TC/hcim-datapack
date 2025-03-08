@@ -4,3 +4,5 @@ scoreboard objectives add GlobalHCIMDeaths deathCount
 
 team add NoDeaths
 team join NoDeaths @s
+
+scoreboard players set @s GlobalHCIMDeaths 0 
