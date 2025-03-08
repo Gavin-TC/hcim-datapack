@@ -1,5 +1,5 @@
 {
-	"parent": "ironman:before_death/adventure",
+	"parent": "ironman:before_death/adventure/adventure",
 	"display":
 	{
 		"icon":
