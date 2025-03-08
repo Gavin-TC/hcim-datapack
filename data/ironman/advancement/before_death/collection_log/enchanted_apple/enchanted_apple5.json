@@ -1,19 +1,19 @@
 {
-	"parent": "ironman:before_death/collection_log/diamonds3",
+	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple4",
 	"display":
 	{
 		"icon":
 		{
-			"id": "diamond"
+			"id": "enchanted_golden_apple"
 		},
 		"title":
 		{
-			"text": "Diamonds IV",
+			"text": "Diamonds V",
 			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "Getting quite wealthy now.",
+			"text": "Is this too easy?",
 			"color": "blue",
 			"bold": true
 		},
@@ -51,10 +51,34 @@
 						"count": {
 							"min": 64
 						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
 					}
 				],
 				"slots": {
-					"occupied": 4
+					"occupied": 8
 				},
 				"player": {
 					"type_specific": {

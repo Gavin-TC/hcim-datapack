@@ -1,19 +1,19 @@
 {
-	"parent": "ironman:before_death/collection_log/diamonds1",
+	"parent": "ironman:before_death/collection_log/netherite/netherite4",
 	"display":
 	{
 		"icon":
 		{
-			"id": "diamond"
+			"id": "netherite_ingot"
 		},
 		"title":
 		{
-			"text": "Diamonds II",
+			"text": "Netherite V",
 			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "You could adorn yourself with some hard armor now.",
+			"text": "Seriously insane.",
 			"color": "blue",
 			"bold": true
 		},
@@ -24,14 +24,14 @@
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
+		"on_netherite_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "diamond",
+						"items": "minecraft:netherite_ingot",
 						"count": {
-							"min": 24
+							"min": 128
 						}
 					}
 				],
@@ -52,6 +52,6 @@
 	},
 	"requirements":
 	[
-		["on_diamond_pickup"]
+		["on_netherite_pickup"]
 	]
 }

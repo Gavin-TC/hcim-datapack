@@ -1,19 +1,19 @@
 {
-	"parent": "ironman:before_death/collection_log/netherite",
+	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple3",
 	"display":
 	{
 		"icon":
 		{
-			"id": "netherite_ingot"
+			"id": "enchanted_golden_apple"
 		},
 		"title":
 		{
-			"text": "Netherite I",
+			"text": "Diamonds IV",
 			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "The best of the best.",
+			"text": "Getting quite wealthy now.",
 			"color": "blue",
 			"bold": true
 		},
@@ -24,17 +24,38 @@
 	},
 	"criteria":
 	{
-		"on_netherite_pickup": {
+		"on_diamond_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "minecraft:netherite_ingot",
+						"items": "diamond",
 						"count": {
-							"min": 1
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
 						}
 					}
 				],
+				"slots": {
+					"occupied": 4
+				},
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",
@@ -52,6 +73,6 @@
 	},
 	"requirements":
 	[
-		["on_netherite_pickup"]
+		["on_diamond_pickup"]
 	]
 }

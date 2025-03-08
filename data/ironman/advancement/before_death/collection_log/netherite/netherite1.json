@@ -1,5 +1,5 @@
 {
-	"parent": "ironman:before_death/collection_log/netherite4",
+	"parent": "ironman:before_death/collection_log/netherite/netherite",
 	"display":
 	{
 		"icon":
@@ -8,12 +8,12 @@
 		},
 		"title":
 		{
-			"text": "Netherite V",
+			"text": "Netherite I",
 			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "Seriously insane.",
+			"text": "The best of the best.",
 			"color": "blue",
 			"bold": true
 		},
@@ -31,7 +31,7 @@
 					{
 						"items": "minecraft:netherite_ingot",
 						"count": {
-							"min": 128
+							"min": 1
 						}
 					}
 				],

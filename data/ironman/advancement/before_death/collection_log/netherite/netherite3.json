@@ -1,19 +1,19 @@
 {
-	"parent": "ironman:before_death/collection_log/diamonds2",
+	"parent": "ironman:before_death/collection_log/netherite/netherite2",
 	"display":
 	{
 		"icon":
 		{
-			"id": "diamond"
+			"id": "netherite_ingot"
 		},
 		"title":
 		{
-			"text": "Diamonds III",
+			"text": "Netherite III",
 			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "7 bits of beauty.",
+			"text": "Straight out of Barrows.",
 			"color": "blue",
 			"bold": true
 		},
@@ -24,14 +24,14 @@
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
+		"on_netherite_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "diamond",
+						"items": "minecraft:netherite_ingot",
 						"count": {
-							"min": 64
+							"min": 24
 						}
 					}
 				],
@@ -52,6 +52,6 @@
 	},
 	"requirements":
 	[
-		["on_diamond_pickup"]
+		["on_netherite_pickup"]
 	]
 }

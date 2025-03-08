@@ -1,0 +1,57 @@
+{
+	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple",
+	"display":
+	{
+		"icon":
+		{
+			"id": "enchanted_golden_apple"
+		},
+		"title":
+		{
+			"text": "Enchanted Golden Apple I",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "This could save you.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "enchanted_golden_apple",
+						"count": {
+							"min": 1
+						}
+					}
+				],
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_diamond_pickup"]
+	]
+}
