@@ -1,0 +1,90 @@
+{
+	"parent": "ironman:before_death/collection_log/diamonds4",
+	"display":
+	{
+		"icon":
+		{
+			"id": "diamond"
+		},
+		"title":
+		{
+			"text": "Diamonds V",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "Is this too easy?",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					},
+					{
+						"items": "diamond",
+						"count": {
+							"min": 64
+						}
+					}
+				],
+				"slots": {
+					"occupied": 8
+				}
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_diamond_pickup"]
+	]
+}

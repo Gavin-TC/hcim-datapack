@@ -1,22 +1,21 @@
 {
-	"parent": "ironman:fifty_total_deaths",
+	"parent": "ironman:after_death/ten_total_deaths",
 	"display":
 	{
 		"icon":
 		{
-			"id": "wither_skeleton_skull"
+			"id": "skeleton_skull"
 		},
 		"title":
 		{
-			"text": "100 Total Deaths",
+			"text": "25 Total Deaths",
 			"color": "red",
 			"bold": true
 		},
 		"description": {
-			"text": "Seriously embarrassing.",
+			"text": "Why did you even pick hardcore??",
 			"color": "blue",
-			"bold": true,
-			"italic": true
+			"bold": true
 		},
 		"frame": "challenge",
 		"hidden": false

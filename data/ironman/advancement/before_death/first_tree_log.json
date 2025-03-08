@@ -1,0 +1,43 @@
+{
+	"parent": "ironman:before_death/adventure",
+	"display":
+	{
+		"icon":
+		{
+			"id": "oak_log"
+		},
+		"title":
+		{
+			"text": "First Tree Log",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "A new life begins when a tree life ends.",
+			"color": "blue",
+			"bold": false
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"background": "minecraft:textures/block/dirt.png"
+	},
+	"criteria":
+	{
+		"log_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:logs"
+					}
+				]
+			}
+		}	
+	},
+	"requirements":
+	[
+		["log_pickup"]
+	]
+}

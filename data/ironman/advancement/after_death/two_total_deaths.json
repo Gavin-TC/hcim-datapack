@@ -1,5 +1,5 @@
 {
-	"parent": "ironman:twentyfive_total_deaths",
+	"parent": "ironman:after_death/root",
 	"display":
 	{
 		"icon":
@@ -8,12 +8,12 @@
 		},
 		"title":
 		{
-			"text": "50 Total Deaths",
+			"text": "2 Total Deaths",
 			"color": "red",
 			"bold": true
 		},
 		"description": {
-			"text": "Please make a totem farm!",
+			"text": "Again!",
 			"color": "blue",
 			"bold": true
 		},

@@ -1,0 +1,51 @@
+{
+	"parent": "ironman:before_death/adventure",
+	"display":
+	{
+		"icon":
+		{
+			"id": "wooden_pickaxe"
+		},
+		"title":
+		{
+			"text": "First Tool",
+			"color": "blue",
+			"bold": true
+		},
+		"description": {
+			"text": "Let construction begin!",
+			"color": "blue",
+			"bold": false
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"background": "minecraft:textures/block/dirt.png"
+	},
+	"criteria":
+	{
+		"pickaxe_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:pickaxes"
+					}
+				]
+			}
+		},
+		"death_count": {
+			"trigger": "minecraft:tick",
+			"player": [
+				{
+					"condition": "minecraft:entity_scores",
+					"entity": "this",
+					"scores": {
+						"GlobalHCIMDeaths": 0
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"parent": "ironman:before_death/root",
+	"display":
+	{
+		"icon":
+		{
+			"id": "cobblestone"
+		},
+		"title":
+		{
+			"text": "Adventure",
+			"color": "dark_red",
+			"bold": true
+		},
+		"description": {
+			"text": "The start to your adventure.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_start": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements":
+	[
+		["on_start"]
+	]
+}

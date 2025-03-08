@@ -1,0 +1,45 @@
+{
+	"parent": "ironman:before_death/collection_log/diamonds",
+	"display":
+	{
+		"icon":
+		{
+			"id": "diamond"
+		},
+		"title":
+		{
+			"text": "Diamonds I",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "First diamond acquired.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "diamond",
+						"count": {
+							"min": 1
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_diamond_pickup"]
+	]
+}

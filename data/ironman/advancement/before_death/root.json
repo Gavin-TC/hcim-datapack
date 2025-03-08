@@ -3,7 +3,7 @@
 	{
 		"icon":
 		{
-			"id": "redstone"
+			"id": "cobblestone"
 		},
 		"title":
 		{
@@ -12,7 +12,7 @@
 			"bold": true
 		},
 		"description": {
-			"text": "Dying on my HCIM: Completed.",
+			"text": "A fresh start with one life.",
 			"color": "blue",
 			"bold": true
 		},
@@ -20,16 +20,16 @@
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false,
-		"background": "minecraft:textures/block/netherrack.png"
+		"background": "minecraft:textures/block/dirt.png"
 	},
 	"criteria":
 	{
-		"impossible": {
-			"trigger": "minecraft:impossible"
+		"on_start": {
+			"trigger": "minecraft:tick"
 		}
 	},
 	"requirements":
 	[
-		["impossible"]
+		["on_start"]
 	]
 }

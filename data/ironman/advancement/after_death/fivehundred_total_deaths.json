@@ -1,5 +1,5 @@
 {
-	"parent": "ironman:ten_total_deaths",
+	"parent": "ironman:after_death/twohundred_total_deaths",
 	"display":
 	{
 		"icon":
@@ -8,14 +8,15 @@
 		},
 		"title":
 		{
-			"text": "25 Total Deaths",
+			"text": "500 Total Deaths",
 			"color": "red",
 			"bold": true
 		},
 		"description": {
-			"text": "Why did you even pick hardcore??",
+			"text": "\n\n\n\n...",
 			"color": "blue",
-			"bold": true
+			"bold": true,
+			"italics": true
 		},
 		"frame": "challenge",
 		"hidden": false

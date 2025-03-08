@@ -1,0 +1,34 @@
+{
+	"parent": "ironman:before_death/collection_log/root",
+	"display":
+	{
+		"icon":
+		{
+			"id": "netherite_ingot"
+		},
+		"title":
+		{
+			"text": "Netherite",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "Start digging!",
+			"color": "blue",
+			"bold": true
+		},
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_start": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements":
+	[
+		["on_start"]
+	]
+}

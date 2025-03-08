@@ -1,0 +1,45 @@
+{
+	"parent": "ironman:before_death/collection_log/netherite3",
+	"display":
+	{
+		"icon":
+		{
+			"id": "netherite_ingot"
+		},
+		"title":
+		{
+			"text": "Netherite IV",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "7 bits of pain.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_netherite_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:netherite_ingot",
+						"count": {
+							"min": 64
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_netherite_pickup"]
+	]
+}

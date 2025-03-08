@@ -1,0 +1,45 @@
+{
+	"parent": "ironman:before_death/collection_log/netherite4",
+	"display":
+	{
+		"icon":
+		{
+			"id": "netherite_ingot"
+		},
+		"title":
+		{
+			"text": "Netherite V",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "Seriously insane.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_netherite_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:netherite_ingot",
+						"count": {
+							"min": 128
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_netherite_pickup"]
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"parent": "ironman:before_death/collection_log/netherite1",
+	"display":
+	{
+		"icon":
+		{
+			"id": "netherite_ingot"
+		},
+		"title":
+		{
+			"text": "Netherite II",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "Double axes.",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_netherite_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:netherite_ingot",
+						"count": {
+							"min": 6
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_netherite_pickup"]
+	]
+}

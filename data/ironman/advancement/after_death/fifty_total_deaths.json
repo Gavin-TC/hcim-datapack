@@ -1,22 +1,21 @@
 {
-	"parent": "ironman:hundred_total_deaths",
+	"parent": "ironman:after_death/twentyfive_total_deaths",
 	"display":
 	{
 		"icon":
 		{
-			"id": "nether_star"
+			"id": "totem_of_undying"
 		},
 		"title":
 		{
-			"text": "200 Total Deaths",
+			"text": "50 Total Deaths",
 			"color": "red",
 			"bold": true
 		},
 		"description": {
-			"text": "...",
+			"text": "Please make a totem farm!",
 			"color": "blue",
-			"bold": true,
-			"italic": true
+			"bold": true
 		},
 		"frame": "challenge",
 		"hidden": false

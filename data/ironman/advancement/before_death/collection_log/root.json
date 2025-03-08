@@ -1,0 +1,36 @@
+{
+	"parent": "ironman:before_death/root",
+	"display":
+	{
+		"icon":
+		{
+			"id": "diamond"
+		},
+		"title":
+		{
+			"text": "Collection Log",
+			"color": "green",
+			"bold": true
+		},
+		"description": {
+			"text": "The beginning of an addiction?",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"background": "minecraft:textures/block/dirt.png"
+	},
+	"criteria":
+	{
+		"on_start": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements":
+	[
+		["on_start"]
+	]
+}
