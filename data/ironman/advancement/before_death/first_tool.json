@@ -32,12 +32,7 @@
 					{
 						"items": "#minecraft:pickaxes"
 					}
-				]
-			}
-		},
-		"death_count": {
-			"trigger": "minecraft:tick",
-			"conditions": {
+				],
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",

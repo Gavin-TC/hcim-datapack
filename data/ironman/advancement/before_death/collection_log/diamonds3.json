@@ -34,7 +34,19 @@
 							"min": 64
 						}
 					}
-				]
+				],
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
 			}
 		}
 	},

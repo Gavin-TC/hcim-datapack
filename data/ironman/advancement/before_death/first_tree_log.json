@@ -32,7 +32,19 @@
 					{
 						"items": "#minecraft:logs"
 					}
-				]
+				],
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
 			}
 		}	
 	},
