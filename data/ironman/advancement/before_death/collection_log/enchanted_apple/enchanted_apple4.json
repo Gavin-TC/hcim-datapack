@@ -8,12 +8,12 @@
 		},
 		"title":
 		{
-			"text": "Diamonds IV",
-			"color": "green",
+			"text": "Enchanted Golden Apple IV",
+			"color": "yellow",
 			"bold": true
 		},
 		"description": {
-			"text": "Getting quite wealthy now.",
+			"text": "You're seriously crazy.",
 			"color": "blue",
 			"bold": true
 		},
@@ -29,33 +29,12 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "diamond",
+						"items": "enchanted_golden_apple",
 						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
+							"min": 10
 						}
 					}
 				],
-				"slots": {
-					"occupied": 4
-				},
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",

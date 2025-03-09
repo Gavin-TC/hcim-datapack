@@ -8,12 +8,12 @@
 		},
 		"title":
 		{
-			"text": "Diamonds V",
-			"color": "green",
+			"text": "Enchanted Golden Apples V",
+			"color": "yellow",
 			"bold": true
 		},
 		"description": {
-			"text": "Is this too easy?",
+			"text": "Are you cheating?",
 			"color": "blue",
 			"bold": true
 		},
@@ -29,57 +29,12 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "diamond",
+						"items": "enchanted_golden_apple",
 						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
+							"min": 32
 						}
 					}
 				],
-				"slots": {
-					"occupied": 8
-				},
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",

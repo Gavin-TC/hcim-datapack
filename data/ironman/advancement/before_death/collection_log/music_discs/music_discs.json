@@ -1,40 +1,31 @@
 {
-	"parent": "ironman:before_death/collection_log/diamonds/diamonds1",
+	"parent": "ironman:before_death/collection_log/root",
 	"display":
 	{
 		"icon":
 		{
-			"id": "diamond"
+			"id": "music_disc_pigstep"
 		},
 		"title":
 		{
-			"text": "Diamonds II",
-			"color": "green",
+			"text": "Music Discs",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "Knight in shining armor.",
+			"text": "Start collecting!",
 			"color": "blue",
 			"bold": true
 		},
-		"frame": "challenge",
 		"show_toast": true,
-		"announce_to_chat": true,
+		"announce_to_chat": false,
 		"hidden": false
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
-			"trigger": "minecraft:inventory_changed",
+		"on_start": {
+			"trigger": "minecraft:tick",
 			"conditions": {
-				"items": [
-					{
-						"items": "diamond",
-						"count": {
-							"min": 24
-						}
-					}
-				],
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",
@@ -52,6 +43,6 @@
 	},
 	"requirements":
 	[
-		["on_diamond_pickup"]
+		["on_start"]
 	]
 }

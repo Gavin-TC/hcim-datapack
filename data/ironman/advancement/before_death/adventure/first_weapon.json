@@ -1,38 +1,36 @@
 {
-	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple1",
+	"parent": "ironman:before_death/adventure/first_tool",
 	"display":
 	{
 		"icon":
 		{
-			"id": "enchanted_golden_apple"
+			"id": "wooden_sword"
 		},
 		"title":
 		{
-			"text": "Enchanted Golden Apple II",
-			"color": "yellow",
+			"text": "First Weapon",
+			"color": "green",
 			"bold": true
 		},
 		"description": {
-			"text": "Poor man's totem of undying.",
+			"text": "The best defense is a good offense.",
 			"color": "blue",
-			"bold": true
+			"bold": false
 		},
-		"frame": "challenge",
+		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false
+		"hidden": false,
+		"background": "minecraft:textures/block/dirt.png"
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
+		"sword_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "enchanted_golden_apple",
-						"count": {
-							"min": 2
-						}
+						"items": "#minecraft:swords"
 					}
 				],
 				"player": {
@@ -49,9 +47,5 @@
 				}
 			}
 		}
-	},
-	"requirements":
-	[
-		["on_diamond_pickup"]
-	]
+	}
 }

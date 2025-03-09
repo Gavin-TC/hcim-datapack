@@ -8,12 +8,12 @@
 		},
 		"title":
 		{
-			"text": "Diamonds III",
-			"color": "green",
+			"text": "Enchanted Apple III",
+			"color": "yellow",
 			"bold": true
 		},
 		"description": {
-			"text": "7 bits of beauty.",
+			"text": "Pretty lucky, aren't you?",
 			"color": "blue",
 			"bold": true
 		},
@@ -29,9 +29,9 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "diamond",
+						"items": "enchanted_golden_apple",
 						"count": {
-							"min": 64
+							"min": 5
 						}
 					}
 				],

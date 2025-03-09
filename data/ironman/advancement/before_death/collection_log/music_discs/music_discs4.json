@@ -1,19 +1,19 @@
 {
-	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple1",
+	"parent": "ironman:before_death/collection_log/music_discs/music_discs3",
 	"display":
 	{
 		"icon":
 		{
-			"id": "enchanted_golden_apple"
+			"id": "music_disc_pigstep"
 		},
 		"title":
 		{
-			"text": "Enchanted Golden Apple II",
-			"color": "yellow",
+			"text": "Music Discs IV",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "Poor man's totem of undying.",
+			"text": "You're a true connoisseur!",
 			"color": "blue",
 			"bold": true
 		},
@@ -24,17 +24,20 @@
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
+		"on_disc_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "enchanted_golden_apple",
+						"tag": "#ironman:music_discs",
 						"count": {
-							"min": 2
+							"min": 15
 						}
 					}
 				],
+				"slots": {
+					"occupied": 15
+				},
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",
@@ -52,6 +55,6 @@
 	},
 	"requirements":
 	[
-		["on_diamond_pickup"]
+		["on_disc_pickup"]
 	]
 }

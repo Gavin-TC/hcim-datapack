@@ -9,11 +9,11 @@
 		"title":
 		{
 			"text": "Enchanted Golden Apple I",
-			"color": "green",
+			"color": "yellow",
 			"bold": true
 		},
 		"description": {
-			"text": "This could save you.",
+			"text": "This could save you later.",
 			"color": "blue",
 			"bold": true
 		},
