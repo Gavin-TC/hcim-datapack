@@ -1,0 +1,57 @@
+{
+	"parent": "ironman:before_death/collection_log/head_hunter/head_hunter",
+	"display":
+	{
+		"icon":
+		{
+			"id": "zombie_head"
+		},
+		"title":
+		{
+			"text": "Head Hunter I",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "The ultimate necrocide!",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "zombie_head",
+						"count": {
+							"min": 1
+						}
+					}
+				],
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_diamond_pickup"]
+	]
+}

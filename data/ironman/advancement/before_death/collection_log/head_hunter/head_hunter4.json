@@ -1,0 +1,57 @@
+{
+	"parent": "ironman:before_death/collection_log/head_hunter/head_hunter3",
+	"display":
+	{
+		"icon":
+		{
+			"id": "piglin_head"
+		},
+		"title":
+		{
+			"text": "Head Hunter IV",
+			"color": "red",
+			"bold": true
+		},
+		"description": {
+			"text": "The ultimate porkicide!",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "piglin_head",
+						"count": {
+							"min": 1
+						}
+					}
+				],
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"requirements":
+	[
+		["on_diamond_pickup"]
+	]
+}

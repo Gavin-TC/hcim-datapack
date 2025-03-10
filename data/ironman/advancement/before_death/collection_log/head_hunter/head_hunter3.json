@@ -1,31 +1,40 @@
 {
-	"parent": "ironman:before_death/collection_log/root",
+	"parent": "ironman:before_death/collection_log/head_hunter/head_hunter2",
 	"display":
 	{
 		"icon":
 		{
-			"id": "music_disc_pigstep"
+			"id": "dragon_head"
 		},
 		"title":
 		{
-			"text": "Music Discs",
-			"color": "aqua",
+			"text": "Head Hunter III",
+			"color": "red",
 			"bold": true
 		},
 		"description": {
-			"text": "Start collecting!",
+			"text": "The ultimate regicide!",
 			"color": "blue",
 			"bold": true
 		},
+		"frame": "challenge",
 		"show_toast": true,
-		"announce_to_chat": false,
+		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria":
 	{
-		"on_start": {
-			"trigger": "minecraft:tick",
+		"on_diamond_pickup": {
+			"trigger": "minecraft:inventory_changed",
 			"conditions": {
+				"items": [
+					{
+						"items": "dragon_head",
+						"count": {
+							"min": 1
+						}
+					}
+				],
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",
@@ -43,6 +52,6 @@
 	},
 	"requirements":
 	[
-		["on_start"]
+		["on_diamond_pickup"]
 	]
 }
