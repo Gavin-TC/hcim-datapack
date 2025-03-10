@@ -30,7 +30,8 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "#minecraft:pickaxes"
+						"items": "#minecraft:pickaxes",
+						"count": 1
 					}
 				],
 				"player": {

@@ -31,10 +31,15 @@
 					{
 						"items": "minecraft:netherite_ingot",
 						"count": {
-							"min": 128
+							"min": 64
 						}
 					}
 				],
+				"slots": {
+					"full": {
+						"min": 2
+					}
+				},
 				"player": {
 					"type_specific": {
 						"type": "minecraft:player",

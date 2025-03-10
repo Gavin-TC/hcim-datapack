@@ -33,52 +33,12 @@
 						"count": {
 							"min": 64
 						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
-					},
-					{
-						"items": "diamond",
-						"count": {
-							"min": 64
-						}
 					}
 				],
 				"slots": {
-					"occupied": 8
+					"full": {
+						"min": 8
+					}
 				},
 				"player": {
 					"type_specific": {
