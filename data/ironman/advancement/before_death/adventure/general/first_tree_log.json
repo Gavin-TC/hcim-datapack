@@ -1,36 +1,35 @@
 {
-	"parent": "ironman:before_death/adventure/first_tool",
+	"parent": "ironman:before_death/adventure/adventure",
 	"display":
 	{
 		"icon":
 		{
-			"id": "wooden_sword"
+			"id": "oak_log"
 		},
 		"title":
 		{
-			"text": "First Weapon",
-			"color": "green",
+			"text": "First Tree Log",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "The best defense is a good offense.",
+			"text": "A new life begins when a tree life ends.",
 			"color": "blue",
-			"bold": false
+			"bold": true
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false,
-		"background": "minecraft:textures/block/dirt.png"
+		"hidden": false
 	},
 	"criteria":
 	{
-		"sword_pickup": {
+		"log_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "#minecraft:swords"
+						"items": "#minecraft:logs"
 					}
 				],
 				"player": {
@@ -46,6 +45,10 @@
 					}
 				}
 			}
-		}
-	}
+		}	
+	},
+	"requirements":
+	[
+		["log_pickup"]
+	]
 }

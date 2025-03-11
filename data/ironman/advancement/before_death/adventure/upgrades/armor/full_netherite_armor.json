@@ -1,0 +1,59 @@
+{
+	"parent": "ironman:before_death/adventure/upgrades/armor/full_diamond_armor",
+	"display":
+	{
+		"icon":
+		{
+			"id": "netherite_chestplate"
+		},
+		"title":
+		{
+			"text": "Full Netherite Armor",
+			"color": "aqua",
+			"bold": true
+		},
+		"description": {
+			"text": "Straight out of Barrows!",
+			"color": "blue",
+			"bold": true
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria":
+	{
+		"armor_equipped": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"slots": {
+						"armor.head": {
+							"items": "minecraft:netherite_helmet"
+						},
+						"armor.chest": {
+							"items": "minecraft:netherite_chestplate"
+						},
+						"armor.legs": {
+							"items": "minecraft:netherite_leggings"
+						},
+						"armor.feet": {
+							"items": "minecraft:netherite_boots"
+						}
+					},
+					"type_specific": {
+						"type": "minecraft:player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": 0
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

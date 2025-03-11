@@ -1,38 +1,40 @@
 {
-	"parent": "ironman:before_death/collection_log/enchanted_apple/enchanted_apple3",
+	"parent": "ironman:before_death/adventure/upgrades/tools/first_diamond_tool",
 	"display":
 	{
 		"icon":
 		{
-			"id": "enchanted_golden_apple"
+			"id": "netherite_pickaxe"
 		},
 		"title":
 		{
-			"text": "Enchanted Golden Apple IV",
-			"color": "yellow",
+			"text": "First Netherite Tool",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "You're very crazy. [10]",
+			"text": "I'm sure there was lots of deconstruction to obtain this.",
 			"color": "blue",
 			"bold": true
 		},
-		"frame": "challenge",
+		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria":
 	{
-		"on_diamond_pickup": {
+		"pickaxe_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "enchanted_golden_apple",
-						"count": {
-							"min": 10
-						}
+						"items": [
+							"minecraft:netherite_pickaxe",
+							"minecraft:netherite_axe",
+							"minecraft:netherite_hoe",
+							"minecraft:netherite_shovel"
+						]
 					}
 				],
 				"player": {
@@ -49,9 +51,5 @@
 				}
 			}
 		}
-	},
-	"requirements":
-	[
-		["on_diamond_pickup"]
-	]
+	}
 }

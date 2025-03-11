@@ -4,16 +4,16 @@
 	{
 		"icon":
 		{
-			"id": "cobblestone"
+			"id": "end_portal_frame"
 		},
 		"title":
 		{
-			"text": "Adventure",
+			"text": "Major Game Upgrades",
 			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "The start to your adventure.",
+			"text": "For anything major.",
 			"color": "blue",
 			"bold": true
 		},

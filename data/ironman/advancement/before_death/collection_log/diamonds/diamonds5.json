@@ -13,7 +13,7 @@
 			"bold": true
 		},
 		"description": {
-			"text": "Is this too easy?",
+			"text": "A great fortune! [448]",
 			"color": "blue",
 			"bold": true
 		},
@@ -37,7 +37,7 @@
 				],
 				"slots": {
 					"full": {
-						"min": 8
+						"min": 7
 					}
 				},
 				"player": {

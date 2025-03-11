@@ -1,36 +1,40 @@
 {
-	"parent": "ironman:before_death/adventure/adventure",
+	"parent": "ironman:before_death/adventure/upgrades/tools/first_iron_tool",
 	"display":
 	{
 		"icon":
 		{
-			"id": "oak_log"
+			"id": "diamond_pickaxe"
 		},
 		"title":
 		{
-			"text": "First Tree Log",
-			"color": "green",
+			"text": "First Diamond Tool",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "A new life begins when a tree life ends.",
+			"text": "Let even more deconstruction begin!",
 			"color": "blue",
-			"bold": false
+			"bold": true
 		},
-		"frame": "task",
+		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false,
-		"background": "minecraft:textures/block/dirt.png"
+		"hidden": false
 	},
 	"criteria":
 	{
-		"log_pickup": {
+		"pickaxe_pickup": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "#minecraft:logs"
+						"items": [
+							"minecraft:iron_pickaxe",
+							"minecraft:iron_axe",
+							"minecraft:iron_hoe",
+							"minecraft:iron_shovel"
+						]
 					}
 				],
 				"player": {
@@ -46,10 +50,6 @@
 					}
 				}
 			}
-		}	
-	},
-	"requirements":
-	[
-		["log_pickup"]
-	]
+		}
+	}
 }

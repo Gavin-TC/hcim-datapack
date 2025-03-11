@@ -1,40 +1,38 @@
 {
-	"parent": "ironman:before_death/adventure/adventure",
+	"parent": "ironman:before_death/adventure/upgrades/upgrades",
 	"display":
 	{
 		"icon":
 		{
-			"id": "wooden_pickaxe"
+			"id": "elytra"
 		},
 		"title":
 		{
-			"text": "First Tool",
-			"color": "green",
+			"text": "Elytra Obtained",
+			"color": "aqua",
 			"bold": true
 		},
 		"description": {
-			"text": "Let construction begin!",
+			"text": "Celebrate with fireworks!",
 			"color": "blue",
-			"bold": false
+			"bold": true
 		},
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false,
-		"background": "minecraft:textures/block/dirt.png"
+		"hidden": false
 	},
 	"criteria":
 	{
-		"pickaxe_pickup": {
+		"armor_equipped": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
-				"items": [
-					{
-						"items": "#minecraft:pickaxes",
-						"count": 1
-					}
-				],
 				"player": {
+					"slots": {
+						"armor.chest": {
+							"items": "minecraft:elytra"
+						}
+					},
 					"type_specific": {
 						"type": "minecraft:player",
 						"stats": [
