@@ -28,9 +28,5 @@
 		"on_start": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"requirements":
-	[
-		["on_start"]
-	]
+	}
 }

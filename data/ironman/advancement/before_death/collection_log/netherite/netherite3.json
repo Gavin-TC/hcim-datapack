@@ -46,9 +46,5 @@
 				]
 			}
 		}
-	},
-	"requirements":
-	[
-		["on_netherite_pickup"]
-	]
+	}
 }

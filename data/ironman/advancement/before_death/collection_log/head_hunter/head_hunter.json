@@ -37,9 +37,5 @@
 				]
 			}
 		}
-	},
-	"requirements":
-	[
-		["on_start"]
-	]
+	}
 }

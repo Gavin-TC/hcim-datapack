@@ -30,7 +30,7 @@
 						"condition": "minecraft:entity_scores",
 						"entity": "this",
 						"scores": {
-							"GlobalHCIMDeaths": 1
+							"GlobalHCIMDeaths": 50
 						}
 					}
 				]
