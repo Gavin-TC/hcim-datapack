@@ -40,18 +40,15 @@
 						"min": 7
 					}
 				},
-				"player": {
-					"type_specific": {
-						"type": "minecraft:player",
-						"stats": [
-							{
-								"type": "minecraft:custom",
-								"stat": "minecraft:deaths",
-								"value": 0
-							}
-						]
+				"player": [
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"GlobalHCIMDeaths": 0
+						}
 					}
-				}
+				]
 			}
 		}
 	},

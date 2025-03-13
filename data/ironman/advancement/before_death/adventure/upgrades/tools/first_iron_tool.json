@@ -8,7 +8,7 @@
 		},
 		"title":
 		{
-			"text": "First Diamond Tool",
+			"text": "First Iron Tool",
 			"color": "aqua",
 			"bold": true
 		},
@@ -30,25 +30,22 @@
 				"items": [
 					{
 						"items": [
-							"minecraft:diamond_pickaxe",
-							"minecraft:diamond_axe",
-							"minecraft:diamond_hoe",
-							"minecraft:diamond_shovel"
+							"minecraft:iron_pickaxe",
+							"minecraft:iron_axe",
+							"minecraft:iron_hoe",
+							"minecraft:iron_shovel"
 						]
 					}
 				],
-				"player": {
-					"type_specific": {
-						"type": "minecraft:player",
-						"stats": [
-							{
-								"type": "minecraft:custom",
-								"stat": "minecraft:deaths",
-								"value": 0
-							}
-						]
+				"player": [
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"GlobalHCIMDeaths": 0
+						}
 					}
-				}
+				]
 			}
 		}
 	}
