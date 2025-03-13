@@ -27,23 +27,26 @@
 		"armor_equipped": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
-				"player": {
-					"slots": {
-						"armor.chest": {
-							"items": "minecraft:elytra"
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": "minecraft:elytra"
+								}
+							}
 						}
 					},
-					"type_specific": {
-						"type": "minecraft:player",
-						"stats": [
-							{
-								"type": "minecraft:custom",
-								"stat": "minecraft:deaths",
-								"value": 0
-							}
-						]
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"GlobalHCIMDeaths": 0
+						}
 					}
-				}
+				]
 			}
 		}
 	}

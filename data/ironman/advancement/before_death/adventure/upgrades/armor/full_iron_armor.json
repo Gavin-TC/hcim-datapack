@@ -27,32 +27,35 @@
 		"armor_equipped": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
-				"player": {
-					"slots": {
-						"armor.head": {
-							"items": "minecraft:iron_helmet"
-						},
-						"armor.chest": {
-							"items": "minecraft:iron_chestplate"
-						},
-						"armor.legs": {
-							"items": "minecraft:iron_leggings"
-						},
-						"armor.feet": {
-							"items": "minecraft:iron_boots"
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": "minecraft:iron_helmet"
+								},
+								"chest": {
+									"items": "minecraft:iron_chestplate"
+								},
+								"legs": {
+									"items": "minecraft:iron_leggings"
+								},
+								"feet": {
+									"items": "minecraft:iron_boots"
+								}
+							}
 						}
 					},
-					"type_specific": {
-						"type": "minecraft:player",
-						"stats": [
-							{
-								"type": "minecraft:custom",
-								"stat": "minecraft:deaths",
-								"value": 0
-							}
-						]
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"GlobalHCIMDeaths": 0
+						}
 					}
-				}
+				]
 			}
 		}
 	}
